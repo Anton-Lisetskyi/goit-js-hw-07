@@ -16,11 +16,11 @@ function createBoxes(amount) {
 
   for (let i = 0; i < amount; i++) {
     const box = document.createElement('div');
-    const size = 30 + i + 10; // Розмір кожного елемента збільшується на 10px
+    const size = 30 + i * 10;
     box.style.width = `${size}px`;
     box.style.height = `${size}px`;
     box.style.backgroundColor = getRandomHexColor();
-    // box.style.marginBottom = '10px';
+ 
 
     boxes.push(box);
   }
